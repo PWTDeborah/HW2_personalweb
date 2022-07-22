@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* reset end */
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img{
+    vertical-align: middle;
+}
+
+body{
+	font-family: 'Roboto', 'Noto Sans TC', -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
+	font-style: italic;
+	line-height: 1.5;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}
+
+a:hover{
+	opacity: 0.6;
+}
+
+.text_white{
+	color: #fff;
+}
+
+.font_24{
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.bg_black{
+	background-color: #000;
+}
+
+.header{
+	background-image: url(images/banner.png);
+	background-size: cover;
+	height: 100vh;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.header h1 span{
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 106px;
+}
+
+.job{
+	margin: 32px 40px;
+}
+
+.social_media{
+	display: flex;
+}
+
+.social_media li{
+	padding: 0 8px;
+}
+
+.about{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 56px;
+	text-align: center;
+}
+
+.title{
+	font-size: 64px;
+	font-weight: 500;
+	margin-top: 56px;
+}
+
+.photo{
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+.profile{
+	margin-bottom: 24px;
+}
+
+.lh_42{
+	line-height: 42px;
+}
+
+.birth{
+	margin-top: 4px;
+	margin-bottom: 8px;
+}
+
+.experience{
+	border-top: 1px solid #000;
+	padding: 0 20px;
+}
+
+.experience li{
+	margin-top: 28px;
+}
+
+.dot{
+	width: 22px;
+  	height: 22px;
+  	border-radius: 50%;
+  	background-color: #891818;
+	margin-right: 16px;
+	display: inline-block;
+}
+
+.brand{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 160px;
+}
+
+.slogan{
+	font-weight: 500;
+	margin: 12px 0 32px 0;
+}
+
+.description{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.brand_item{
+	display: flex;
+}
+
+.brand_img1{
+	margin: 68px 0 40px 0;
+}
+
+.mgr_24{
+	margin-right: 24px;
+}
+
+.work{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 96px;
+}
+
+.mgt16_mgb56{
+	margin-top: 16px;
+	margin-bottom: 56px;
+}
+
+.work_img{
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.work_img li{
+	padding: 0 12px;
+}
+
+.work_img h4{
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 42px;
+	margin-top: 16px;
+}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 64px;
+}
+
+.contact{
+	font-size: 24px;
+	font-weight: 500px;
+}
+
+.contact li{
+	margin-top: 16px;
+}
