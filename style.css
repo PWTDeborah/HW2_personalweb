@@ -115,10 +115,10 @@ a:hover{
 }
 
 .about{
-	display: flex;
+	/* display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: center; */
 	padding-bottom: 56px;
 	text-align: center;
 }
@@ -126,7 +126,8 @@ a:hover{
 .title{
 	font-size: 64px;
 	font-weight: 500;
-	margin-top: 56px;
+	padding-top: 56px;
+	line-height: 84px;
 }
 
 .photo{
@@ -149,26 +150,50 @@ a:hover{
 
 .experience{
 	border-top: 1px solid #000;
+	width: 384px;
 	padding: 0 20px;
+	margin: 0 auto;
 }
 
 .experience li{
 	margin-top: 28px;
+	position: relative;
 }
 
-.dot{
+.experience li:first-child::before {
+	left: -10px;
+}
+  
+.experience li:nth-child(2)::before {
+	left: 40px;
+}
+  
+.experience li:last-child::before {
+	left: -20px;
+}
+
+.experience li::before{
+	content: '';
+	position: absolute;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background-color: #891818;
+	top: 5px;
+}
+
+/* .dot{
 	width: 22px;
   	height: 22px;
   	border-radius: 50%;
   	background-color: #891818;
 	margin-right: 16px;
 	display: inline-block;
-}
+} */
+
+
 
 .brand{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	text-align: center;
 	padding-bottom: 160px;
 }
@@ -185,21 +210,19 @@ a:hover{
 
 .brand_item{
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .brand_img1{
-	margin: 68px 0 40px 0;
+	margin: 68px 0 28px 0;
 }
 
-.mgr_24{
-	margin-right: 24px;
+.pd_12{
+	padding: 12px;
 }
 
 .work{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	margin-bottom: 96px;
 }
@@ -211,6 +234,8 @@ a:hover{
 
 .work_img{
 	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 	margin-bottom: 48px;
 }
 
@@ -226,10 +251,7 @@ a:hover{
 }
 
 .footer{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 	padding-bottom: 64px;
 }
 
