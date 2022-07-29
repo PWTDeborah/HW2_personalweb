@@ -115,10 +115,6 @@ a:hover{
 }
 
 .about{
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
 	padding-bottom: 56px;
 	text-align: center;
 }
@@ -149,49 +145,28 @@ a:hover{
 }
 
 .experience{
-	border-top: 1px solid #000;
 	width: 384px;
-	padding: 0 20px;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-top: 1px solid #000;
 }
 
-.experience li{
-	margin-top: 28px;
-	position: relative;
+.dot{
+	display: flex;
+	align-items: center;
+	padding-top: 28px;
 }
 
-.experience li:first-child::before {
-	left: -10px;
-}
-  
-.experience li:nth-child(2)::before {
-	left: 40px;
-}
-  
-.experience li:last-child::before {
-	left: -20px;
-}
-
-.experience li::before{
+.dot::before{
 	content: '';
-	position: absolute;
 	width: 22px;
 	height: 22px;
 	border-radius: 50%;
 	background-color: #891818;
-	top: 5px;
-}
-
-/* .dot{
-	width: 22px;
-  	height: 22px;
-  	border-radius: 50%;
-  	background-color: #891818;
 	margin-right: 16px;
-	display: inline-block;
-} */
-
-
+}
 
 .brand{
 	text-align: center;
